@@ -38,7 +38,7 @@ function App() {
     setGrid(currentGrid);
 
     try {
-      const response = await fetch('http://localhost:5000/api/calculate-path', {
+      const response = await fetch('https://dsa-dp-pathfinder.onrender.com/api/calculate-path', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ grid: currentGrid }),
@@ -59,7 +59,7 @@ function App() {
   return (
     <div className="App">
       <header>
-        <h1>💎 DP Dungeon Pathfinder</h1>
+        <h1> DP DUNGEOUN PATHFINDER</h1>
         <p>Dynamic Programming (Min Path Sum) Visualizer</p>
       </header>
       
@@ -71,10 +71,10 @@ function App() {
           
           <div className="button-group">
             <button className="btn-secondary" onClick={generateRandomGrid}>
-              🎲 Random Map
+              🎲 RANDOM MAP
             </button>
             <button className="btn-primary" onClick={calculatePath}>
-              🚀 Find Min Path
+              🚀 FIND MIN PATH
             </button>
           </div>
 
